@@ -30,7 +30,7 @@ public class Conditioner {
     }
 
     // Повысить температуру воздуха
-    ClimatControl increase(ClimatControl c, double increase) {
+    public ClimatControl increase(ClimatControl c, double increase) {
         c.setTemperature(c.getTemperature() + increase);
         if (c.getTemperature() > 50) {
             c.setTemperature(50);
@@ -39,7 +39,7 @@ public class Conditioner {
     }
 
     // Понизить температуру воздуха
-    ClimatControl decrease(ClimatControl c, double decrease) {
+    public ClimatControl decrease(ClimatControl c, double decrease) {
         c.setTemperature(c.getTemperature() - decrease);
         if (c.getTemperature() < 0) {
             c.setTemperature(0);

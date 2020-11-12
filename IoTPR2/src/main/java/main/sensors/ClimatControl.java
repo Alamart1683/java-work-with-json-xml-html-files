@@ -21,8 +21,8 @@ public class ClimatControl {
     public ClimatControl(int id, int status) {
         this.id = id;
         this.status = status;
-        double leftTemperatureLimit = -15;
-        double rightTemperatureLimit = 50;
+        double leftTemperatureLimit = 10;
+        double rightTemperatureLimit = 40;
         this.temperature = leftTemperatureLimit + new Random().nextDouble() * (rightTemperatureLimit - leftTemperatureLimit);
         this.air_humidity = 0 + new Random().nextDouble() * 5;
     }
